@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #5f9341;
+    margin-bottom: 4px;
+    border-radius: 50px;
+}
+
+input:hover{
+    box-shadow: 0 0 5px 0 black;
+    transition-duration: 0.3s;
+}
+
+button {
+    background: #5f9341;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #5f9341;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+button:active {
+    transition-duration: 0.3s;
+    top: 3px;
+    position: relative;
+}
+
+button:hover{
+    box-shadow: 0 0 5px 0 black;
+    transition-duration: 0.3s;
+}
+
+#delete-btn {
+    background: white;
+    color: #5f9341;
+}
+
+#dark-mode{
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+h1{
+    font-family: Lobster;
+    padding: 0px 0px 0px 5px;
+    color: #5f9341;
+    text-shadow: -3px 3px 0px rgb(0 0 0 / 25%);
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: #5f9341;
+}
+
+.dark-mode-body{
+    color: white !important;
+    background: black !important;
+}
+
+
