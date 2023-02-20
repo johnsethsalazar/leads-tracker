@@ -79,4 +79,14 @@ a {
     background: black !important;
 }
 
+.ellipse{
+    position: absolute;
+    width: 679px;
+    height: 679px;
+    left: calc(50% - 679px/2 - 289.5px);
+    top: -452px;
+    background: rgba(73, 171, 48, 0.5);
+    filter: blur(153px);
+    z-index: -1;
+}
 

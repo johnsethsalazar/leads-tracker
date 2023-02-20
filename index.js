@@ -5,25 +5,37 @@ const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
+const darkMode = document.getElementById("dark-mode")
 
-function toggleDarkLight(){
-    // if(document.body.style.background === 'black'){
-    //     document.body.style.background = 'white'
-    // }
-    // else if(document.body.style.background === 'white'){
-    //     document.body.style.background = 'white'
-    // }
-    let element = document.body
-    let btn = document.getElementById("dark-mode")
-    element.classList.toggle("dark-mode-body")
+darkMode.addEventListener("click", function(){
+        // if(document.body.style.background === 'black'){
+        //     document.body.style.background = 'white'
+        // }
+        // else if(document.body.style.background === 'white'){
+        //     document.body.style.background = 'white'
+        // }
+        let element = document.body
+        let btn = document.getElementById("dark-mode")
+        let title = document.getElementById("title")
+        element.classList.toggle("dark-mode-body")
+    
 
-    if(element.classList.contains("dark-mode-body")){
-        btn.innerHTML = "Toggle Light Mode"
+        if(element.classList.contains("dark-mode-body")){
+            btn.innerHTML = "Toggle Light Mode"
+            btn.style.border = "1px solid white"
+            btn.style.color = "black"
+            btn.style.background = "white"
+            title.style.textShadow = "-3px 3px 0px rgba(255, 255, 255, 0.25)"
+        }
+        else{
+            btn.innerHTML = "Toggle Dark Mode"
+            btn.style.border = "1px solid black"
+            title.style.textShadow = "-3px 3px 0px rgb(0 0 0 / 25%)"
+            btn.style.color = "white"
+            btn.style.background = "black"
+        }
     }
-    else{
-        btn.innerHTML = "Toggle Dark Mode"
-    }
-}
+)
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
